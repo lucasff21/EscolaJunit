@@ -6,8 +6,10 @@ public class Professores {
 
     private String nome;
 
-
     private List<Disciplinas> disciplinas;
+
+    public Professores() {
+    }
     public Professores(String nome, List<Disciplinas> disciplinas) {
         this.nome = nome;
 
