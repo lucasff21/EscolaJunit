@@ -21,9 +21,8 @@ public class Aluno {
         return nome;
     }
 
-    public String setNome(String nome) {
+    public void setNome(String nome) {
         this.nome = nome;
-        return nome;
     }
 
     public String getDataDeNascimento() {

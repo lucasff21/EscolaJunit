@@ -18,24 +18,24 @@ public class TesteAluno {
     @Test
     public void testNome() {
         String resultadoEsperado = "Paulo";
-        String resultadoRetornado = aluno.setNome("Paulo");
-        assertEquals (resultadoEsperado, resultadoRetornado);
+        aluno.setNome("Paulo");
+        assertEquals (resultadoEsperado, aluno.getNome());
     }
 
     @Test
     public void testDataDeNascimento() {
+        String resultadoEsperado = "01/01/2000";
         aluno.setDataDeNascimento("01/01/2000");
-        assertEquals("01/01/2000", aluno.getDataDeNascimento());
+        assertEquals(resultadoEsperado, aluno.getDataDeNascimento());
     }
 
     @Test
     public void testMatricula() {
-        aluno.setMatricula(12345);
-        assertEquals(12345, aluno.getMatricula());
+        Integer resultadoEsperado = 1234;
+        aluno.setMatricula(1234);
+        assertEquals(resultadoEsperado, aluno.getMatricula());
     }
 
-    public Boolean createAluno(){
-        return true;
-    }
+
 
 }
